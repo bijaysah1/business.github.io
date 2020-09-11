@@ -2,6 +2,8 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="https://ssl.gstatic.com/ui/v1/icons/mail/images/favicon5.ico" type="image/x-icon">
+<meta name="discrption" content="Start your business at low capital( 200$ only) in DUBAI">
 <style>
 body {font-family: Arial, Helvetica, sans-serif; background-color: #e9ebee;}
 
