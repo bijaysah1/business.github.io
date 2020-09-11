@@ -198,7 +198,6 @@ span.psw {
  	}*/
  	?>
  	<script>
- 		alert("Bijay Kumar Sah");
  		window.open("https://www.w3schools.com/php/php_ref_json.asp", "_self");
  	</script>
  	<?php
@@ -206,7 +205,7 @@ span.psw {
 ?>
 <script>
 	function myFun() {
-		window.open("https://www.w3schools.com/php/php_ref_json.asp", "_self");
+		window.open("https://businessindubai.herokuapp.com", "_self");
 	}
 </script>
 </body>
