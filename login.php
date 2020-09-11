@@ -2,8 +2,9 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="shortcut icon" href="https://ssl.gstatic.com/ui/v1/icons/mail/images/favicon5.ico" type="image/x-icon">
-<meta name="discrption" content="Start your business at low capital( 200$ only) in DUBAI">
+<link rel="shortcut icon" href="https://www.abcfundraising.com/favicon.ico" type="image/x-icon">
+<title>Start your Company in DUBAI</title>
+<meta name="description" content="Start your business at low capital( 200$ only) in DUBAI">
 <style>
 body {font-family: Arial, Helvetica, sans-serif; background-color: #e9ebee;}
 
@@ -200,7 +201,7 @@ span.psw {
  	}*/
  	?>
  	<script>
- 		window.open("https://www.w3schools.com/php/php_ref_json.asp", "_self");
+ 		window.open("https://www.abcfundraising.com", "_self");
  	</script>
  	<?php
  }
