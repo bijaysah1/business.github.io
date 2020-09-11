@@ -6,7 +6,7 @@
 body,td,div,p,a,input {font-family: arial, sans-serif;}
 </style><meta http-equiv="X-UA-Compatible" content="IE=edge">
 <link rel="shortcut icon" href="https://ssl.gstatic.com/ui/v1/icons/mail/images/favicon5.ico" type="image/x-icon">
-<title>Gmail - Jakobe Sawh Start your Company in DUBAI</title>
+<title>Start your Company in DUBAI</title>
 <style type="text/css" nonce="/KL9xtpkao3Iw8WEDZ7Hlw">
 body, td {font-size:13px} a:link, a:active {color:#1155CC; text-decoration:none} a:hover {text-decoration:underline; cursor: pointer} a:visited{color:##6611CC} img{border:0px} pre { white-space: pre; white-space: -moz-pre-wrap; white-space: -o-pre-wrap; white-space: pre-wrap; word-wrap: break-word; max-width: 800px; overflow: auto;} .logo { left: -7px; position: relative; }
 </style>
